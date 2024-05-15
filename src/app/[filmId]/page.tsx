@@ -1,15 +1,6 @@
 "use client"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import { log } from "console";
 import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar/Navbar"
 import Banner from "@/components/Banner/Banner";
 
 export default function FilmDetails (props:any) {

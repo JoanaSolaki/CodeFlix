@@ -1,0 +1,36 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.gallery div {
+    width: 30%;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery img {
+    width: cover;
+    transition: 500ms ease-in;
+}
+
+.gallery div:hover img {
+    filter: brightness(10%);
+}
+
+.gallery div:hover p {
+    opacity: 100;
+}
+
+.gallery a p {
+    position: relative;
+    top: -60%;
+    opacity: 0;
+    width: fit-content;
+    margin: 0 auto;
+    transition: 500ms ease-in;
+}
