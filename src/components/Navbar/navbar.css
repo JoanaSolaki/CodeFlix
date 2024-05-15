@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 20px;
+}
+
+.navbar input {
+    height: 40px;
+}

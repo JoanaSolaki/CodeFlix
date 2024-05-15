@@ -93,25 +93,8 @@ body {
   margin: 0 auto;
 }
 
-/* BANNERHERO */
-.bannerHero {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-.bannerHero img {
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(20%);
-}
-
-.bannerHero h1 {
-  position: absolute;
-  top: 80%;
-  left: 20%;
-  font-size: 4em;
+h1, h2 {
+  text-transform: uppercase;
 }
 
 /* CAROUSEL */
