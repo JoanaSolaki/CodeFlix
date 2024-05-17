@@ -8,6 +8,11 @@
     text-transform: uppercase;
 }
 
+.brand {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -23,9 +28,23 @@
     color: var(--mainColor);
 }
 
+.navbar div {
+  display: flex;
+  flex-flow: nowrap row;
+}
+
 .navbar input {
-    height: 38px;
-    color: var(--blackColor);
+    height: 39px;
+    border: none;
+    background-color: var(--grayColor);
+    padding: 20px;
+    transition: 500ms ease-in;
+}
+
+.navbar input:focus-visible {
+  outline: none;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
 }
 
 .navbar svg {

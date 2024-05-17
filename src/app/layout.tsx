@@ -3,8 +3,10 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar"
 import Footer from "@/components/Footer/Footer"
 import "./globals.css";
+import { Jura } from 'next/font/google'
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const jura = Jura({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CodeFlix",
@@ -18,12 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={jura.className}>
         <header>
           <Navbar></Navbar>
         </header>
         {children}
         <Footer></Footer>
+
+
       </body>
     </html>
   );

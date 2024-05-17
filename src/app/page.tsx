@@ -70,7 +70,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>LES PLUS POPULAIRES</h2>
           <CarouselContent>
-            {popularMovies.results.map((popularMovie, index) => (
+            {popularMovies.results.map((popularMovie:any, index:number) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + popularMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + popularMovie.poster_path} alt="affiche film" />{popularMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>
@@ -83,7 +83,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>LES MEILLEURES NOTES</h2>
           <CarouselContent>
-            {bestNotes.results.map((bestMovie, index) => (
+            {bestNotes.results.map((bestMovie:any, index:number) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + bestMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + bestMovie.poster_path} alt="affiche film" />{bestMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>
@@ -96,7 +96,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>SORTIE PROCHAINEMENT</h2>
           <CarouselContent>
-            {upcomingMovies.results.map((upcomingMovie, index) => (
+            {upcomingMovies.results.map((upcomingMovie:any, index:number) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + upcomingMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + upcomingMovie.poster_path} alt="affiche film" />{upcomingMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>

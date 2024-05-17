@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <section className='navbar'>
-      <Link href="/">CodeFlix</Link>
+      <Link href="/" className='brand'>CodeFlix</Link>
       <ul>
         <li>
           <Link href="/popular">Populaires</Link>

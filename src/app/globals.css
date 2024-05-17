@@ -97,6 +97,15 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+}
+
 /* CAROUSEL */
 .carousel {
   max-width: 100%;
@@ -124,6 +133,10 @@ h1, h2 {
 
 .carouselItem img:hover {
   transform: scale(1.2);
+}
+
+.carousel h2 {
+  margin-bottom: 20px;
 }
 
 /* RESPONSIVE */
