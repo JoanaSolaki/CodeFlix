@@ -125,3 +125,10 @@ h1, h2 {
 .carouselItem img:hover {
   transform: scale(1.2);
 }
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+  main {
+    padding: 0 20px;
+  }
+}

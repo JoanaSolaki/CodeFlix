@@ -15,8 +15,37 @@
 
 .navbar a {
     margin: 0 20px;
+    transition: 300ms;
+}
+
+.navbar a:hover {
+    margin: 0 20px;
+    color: var(--mainColor);
 }
 
 .navbar input {
-    height: 40px;
+    height: 38px;
+    color: var(--blackColor);
 }
+
+.navbar svg {
+    width: 40px;
+    height: 40px;
+    background-color: var(--mainColor);
+}
+
+/* RESPONSIVE */
+@media (max-width: 960px) {
+    .navbar {
+      flex-flow: wrap;
+      z-index: 99;
+      height: 200px;
+    }  
+  }
+
+@media (max-width: 460px) {
+    .navbar {
+      flex-flow: wrap;
+      height: 200px;
+    }  
+  }
