@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/carousel"
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar/Navbar"
 import BannerHero from "@/components/BannerHero/BannerHero"
 
 export default function Home() {
@@ -71,7 +70,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>LES PLUS POPULAIRES</h2>
           <CarouselContent>
-            {popularMovies.results.map((popularMovie:any, index:number) => (
+            {popularMovies.results.map((popularMovie, index) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + popularMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + popularMovie.poster_path} alt="affiche film" />{popularMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>
@@ -84,7 +83,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>LES MEILLEURES NOTES</h2>
           <CarouselContent>
-            {bestNotes.results.map((bestMovie:any, index:number) => (
+            {bestNotes.results.map((bestMovie, index) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + bestMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + bestMovie.poster_path} alt="affiche film" />{bestMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>
@@ -97,7 +96,7 @@ export default function Home() {
         <Carousel className="carousel">
           <h2>SORTIE PROCHAINEMENT</h2>
           <CarouselContent>
-            {upcomingMovies.results.map((upcomingMovie:any, index:number) => (
+            {upcomingMovies.results.map((upcomingMovie, index) => (
               <CarouselItem className="md:basis-1/2 lg:basis-1/3 carouselItem" key={ index }><Link href={"/" + upcomingMovie.id}><img src={"https://image.tmdb.org/t/p/w500/" + upcomingMovie.poster_path} alt="affiche film" />{upcomingMovie.title}</Link></CarouselItem>
             ))}
           </CarouselContent>
