@@ -14,6 +14,7 @@ import BannerHero from "@/components/BannerHero/BannerHero"
 export default function Home() {
   // FETCH POPULAR FILMS
   const [popularMovies, setPopularMovies] = useState([]);
+
   useEffect(() => {
     const options = {
       method: 'GET',

@@ -1,3 +1,5 @@
+"use client"
+
 // import * as React from 'react';
 // import { styled, alpha } from '@mui/material/styles';
 // import AppBar from '@mui/material/AppBar';
@@ -9,8 +11,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import './navbar.css'
 import Link from "next/link";
+import { useContext } from 'react';
+import { AppContext } from '@/app/AppContext';
 
 export default function Navbar() {
+  const appContext = useContext(AppContext)
   return (
     <section className='navbar'>
       <Link href="/" className='brand'>CodeFlix</Link>
@@ -26,8 +31,10 @@ export default function Navbar() {
         </li>
       </ul>
       <div>
-        <input type="text" />
-        <SearchIcon />
+        <input onChange={(event) => {
+          appContext.setSearch(event.target.value);
+        }} type='search' name='search' id='search'/>
+        <Link href="/search"><SearchIcon /></Link>
       </div>
     </section>
   )
