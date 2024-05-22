@@ -1,13 +1,12 @@
 "use client"
 
 import { useEffect, useState, useContext } from "react";
-import BannerHero from "@/components/BannerHero/BannerHero"
 import Gallery from "@/components/Gallery/Gallery"
 import { AppContext } from "@/app/AppContext";
 
 export default function Search() {
   const appContext = useContext(AppContext)
-  // FETCH POPULAR FILMS
+  // FETCH SEARCHED FILMS
   const [searchedMovies, setSearchedMovies] = useState([]);
   useEffect(() => {
     const options = {
@@ -21,15 +20,12 @@ export default function Search() {
         .then(response => response.json())
         .then(response => {setSearchedMovies(response)})
         .catch(err => console.error(err));
-  }, [])
+  }, [appContext.search])
 
-  console.log("Ce qui a été entré est : " + searchedMovies.search);
+  console.log("Ce qui a été entré est : " + AppContext.search);
 
   return (
     <>
-    {/* { popularMovies && popularMovies.results && popularMovies.results.length > 0 &&
-    <BannerHero info={popularMovies} text={"LES FILMS LES PLUS POPULAIRES"}></BannerHero> } */}
-
     <main className="wrapper">
         <Gallery list={searchedMovies}></Gallery>    
     </main>

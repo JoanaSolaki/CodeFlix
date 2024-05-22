@@ -16,6 +16,11 @@ import { AppContext } from '@/app/AppContext';
 
 export default function Navbar() {
   const appContext = useContext(AppContext)
+
+  const handleSearchChange = (event) => {
+    appContext.setSearch(event.target.value);
+  };
+
   return (
     <section className='navbar'>
       <Link href="/" className='brand'>CodeFlix</Link>
@@ -31,9 +36,7 @@ export default function Navbar() {
         </li>
       </ul>
       <div>
-        <input onChange={(event) => {
-          appContext.setSearch(event.target.value);
-        }} type='search' name='search' id='search'/>
+        <input onChange={handleSearchChange} type='search' name='search' id='search'/>
         <Link href="/search"><SearchIcon /></Link>
       </div>
     </section>
