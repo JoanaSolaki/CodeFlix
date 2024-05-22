@@ -10,6 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import BannerHero from "@/components/BannerHero/BannerHero"
+import { Metadata } from "next";
 
 export default function Home() {
   // FETCH POPULAR FILMS

@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar"
 import Footer from "@/components/Footer/Footer"
 import "./globals.css";
 import { Jura } from 'next/font/google'
-import Script from "next/script";
 import AppContextProvider from "@/app/AppContext";
 
 const jura = Jura({ subsets: ["latin"] });

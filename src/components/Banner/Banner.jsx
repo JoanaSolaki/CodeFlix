@@ -3,9 +3,9 @@ import './banner.css'
 export default function Banner (props) {
     return (
     <section className="banner">
-        <img src={"https://image.tmdb.org/t/p/w500/" + props.info.backdrop_path} alt="affiche film" />
+        { props.info.backdrop_path ? <img src={"https://image.tmdb.org/t/p/w500/" + props.info.backdrop_path} alt="affiche film" /> : <img src="./banner_default.jpg" alt="affiche film" />}
         <article>
-                <img src={"https://image.tmdb.org/t/p/w500/" + props.info.poster_path} alt="affiche film" />
+        { props.info.poster_path ? <img src={"https://image.tmdb.org/t/p/w500/" + props.info.poster_path} alt="affiche film" /> : <img src="./poster_default.jpg" alt="affiche film" />}
             <div>
                 <h1>{props.info.title} ( {new Date(props.info.release_date).getFullYear()} )</h1>
                 {props.info.genres && props.info.genres.length > 0 && (

@@ -9,7 +9,7 @@ export default function Gallery (props) {
             {props.list.results.map((popularMovie, index) => (
             <div key={index}> 
                 <Link href={"/" + popularMovie.id}>
-                    <img src={"https://image.tmdb.org/t/p/w500/" + popularMovie.poster_path} alt="affiche film" />
+                    { popularMovie.poster_path ? <img src={"https://image.tmdb.org/t/p/w500/" + popularMovie.poster_path} alt="affiche film" /> : <img src="./poster_default.jpg" alt="affiche film" />}
                     <p>{popularMovie.title}</p>
                 </Link> 
             </div>)
