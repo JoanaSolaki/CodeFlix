@@ -1,6 +1,6 @@
 .bannerHero {
     width: 100%;
-    height: 600px;
+    height: 800px;
     overflow: hidden;
     position: relative;
   }
@@ -9,12 +9,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(60%);
+    filter: brightness(80%);
   }
   
   .bannerHero h1 {
     position: absolute;
-    top: 80%;
+    top: 88%;
     left: 10%;
     font-size: 5em;
     font-weight: bold;

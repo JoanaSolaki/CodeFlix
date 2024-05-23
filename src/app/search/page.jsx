@@ -23,10 +23,16 @@ export default function Search() {
         .catch(err => console.error(err));
   },[appContext.search]);
 
+  const hasSearchQuery = appContext.search && appContext.search.trim() !== "";
+
   return (
     <>
     <main className="wrapper">
-        <Gallery list={searchedMovies}></Gallery>    
+      {hasSearchQuery ? (
+          <h1>{`Résultat de la recherche pour "${appContext.search}"`}</h1>
+        ) : <h2>Aucun résultat trouvé.</h2> }
+      {searchedMovies ? <h2></h2> : <h2>Aucun résultat trouvé.</h2>}
+      <Gallery list={searchedMovies}></Gallery>    
     </main>
     </>
   );
