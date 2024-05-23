@@ -18,7 +18,8 @@ export default function Navbar() {
   const appContext = useContext(AppContext)
 
   const handleSearchChange = (event) => {
-    appContext.setSearch(event.target.value);
+    setTimeout(() => { appContext.setSearch(event.target.value) }, 1400)
+
   };
 
   return (

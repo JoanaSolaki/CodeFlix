@@ -17,13 +17,11 @@ export default function Search() {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNjJiMzZjMmIzMzVkYTFmYmFmYmE1MTNmMzk0MDNkYSIsInN1YiI6IjY2NDIxZjczNDBhNDM3MDQ0OTU1YzhkNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.J3FXIIRoei2-YLiCQQdR3BGqdVp_C5bnb1RiWMd6khY'
       }
     };
-    setTimeout(() => {
       fetch(`https://api.themoviedb.org/3/search/movie?query=${appContext.search}&include_adult=false&language=fr_FR&page=1`, options)
         .then(response => response.json())
         .then(response => setSearchedMovies(response))
         .catch(err => console.error(err));
-    }, 1000);
-  }, [appContext.search]);
+  },[appContext.search]);
 
   return (
     <>
