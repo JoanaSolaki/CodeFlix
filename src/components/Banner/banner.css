@@ -39,6 +39,12 @@
   line-height: 1.6em;
 }
 
+.tag {
+  border-radius: 20px;
+  border: 1px solid var(--whiteColor);
+  padding: 6px 12px;
+}
+
 .banner article img {
   width: 36%;
 }

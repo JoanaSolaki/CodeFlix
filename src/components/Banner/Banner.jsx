@@ -7,12 +7,12 @@ export default function Banner (props) {
         <article>
         { props.info.poster_path ? <img src={"https://image.tmdb.org/t/p/w500/" + props.info.poster_path} alt="affiche film" /> : <img src="./poster_default.jpg" alt="affiche film" />}
             <div>
-                <h1>{props.info.title} ( {new Date(props.info.release_date).getFullYear()} )</h1>
+                <h1>{props.info.title} ({new Date(props.info.release_date).getFullYear()})</h1>
                 {props.info.genres && props.info.genres.length > 0 && (
                 <ul>
                     {props.info.genres.map((genre, index) => (
                         <li key={ index }>
-                            <p>{genre.name}</p>
+                            <p className='tag'>{genre.name}</p>
                         </li>
                     ))}
                 </ul>
