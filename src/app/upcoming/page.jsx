@@ -24,7 +24,7 @@ export default function Popular() {
   return (
     <>
     { upcomingMovies && upcomingMovies.results && upcomingMovies.results.length > 0 &&
-    <BannerHero info={upcomingMovies} text={"PROCHAINEMENT"}></BannerHero> }
+    <BannerHero info={upcomingMovies} text={"A VENIR"}></BannerHero> }
 
     <main className="wrapper">
         <Gallery list={upcomingMovies}></Gallery>    

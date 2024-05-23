@@ -24,7 +24,7 @@ export default function Popular() {
   return (
     <>
     { bestNotes && bestNotes.results && bestNotes.results.length > 0 &&
-    <BannerHero info={bestNotes} text={"LES FILMS LES MIEUX NOTÉS"}></BannerHero> }
+    <BannerHero info={bestNotes} text={"LES MIEUX NOTÉS"}></BannerHero> }
 
     <main className="wrapper">
         <Gallery list={bestNotes}></Gallery>    
