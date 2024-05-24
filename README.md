@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Brief - CodeFlix
+### Commande à effectuer :
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```shell
+git@github.com:JoanaSolaki/CodeFlix.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```shell
+cd codeflix
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```shell
+npm run dev
+```
 
-## Learn More
+## Links
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/dEf8tOhN1Pk5t8pNjEAFxi/CodeFlix?node-id=0-1&t=ZfHai40PWt0lmdft-1)
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
+![React](https://readmebadge.vercel.app/badges/react.svg)
+![Next.js](https://readmebadge.vercel.app/badges/nextjs.svg)
+![shadcnUI](https://readmebadge.vercel.app/badges/shadcn.svg)
+![Javascript](https://readmebadge.vercel.app/badges/javascript.svg)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white)
+![CSS](https://readmebadge.vercel.app/badges/css.svg)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contexte
 
-## Deploy on Vercel
+Votre agence participe à un appel d’offre pour réaliser une platform de streaming, pour cela elle souhaite réaliser un MVP (produit minimum viable) à présenter aux futurs clients. Au vu de vos dernières réalisations le responsable technique du projet souhaité vous confier cette tâche.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ce projet servira de support de démonstration, vous êtes libres dans le design du site mais le plus important reste les fonctionnalités ! Libre à vous de vous inspirer de Netflix et des autres sites de streaming.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Néanmoins vous devrez satisfaire les contraintes techniques et fonctionnelles fournies par l’agence dans le cahier des charges.
+
+Le responsable technique à défini la stack technique du projet : Nextjs, React et CSS. Vous êtes libre d’utiliser Bootstrap ou un autre framework css pour vous faciliter la tâche.
+
+Pour la réalisation du projet vous utiliserez l’API de The Movie DB. Voici le cahier des charges :
+
+**Page d'accueil :** La page d'accueil doit présenter un "hero banner" qui met en avant le film actuellement le plus populaire, sélectionné comme étant le premier de la liste des films les plus populaires.
+
+**Carrousels de films :** Trois carrousels distincts devraient être mis en place sur la page d'accueil pour présenter les films selon leurs catégories : les plus populaires, les mieux notés et les prochaines sorties.
+
+**Navigation et détails des films :** Chaque miniature de film dans les carrousels doit être cliquable et rediriger vers une page de détails spécifiques pour ce film.
+
+**Fonction de recherche :** Une barre de recherche doit être accessible sur toutes les pages, permettant aux utilisateurs de rechercher et d'être redirigés vers une page de résultats basée sur leurs requêtes. Cette page listera les films qui correspondent aux termes de recherche entrés.
+​
+**Pages catégorielles :** Il est nécessaire de créer des pages distinctes dédiées aux films les plus populaires, les mieux notés, et les prochaines sorties. Chaque page offrira une vue détaillée et spécifique de chaque catégorie.
+
+**Gestion des favoris :** Les utilisateurs doivent pouvoir ajouter des films à une liste de favoris stockée dans le local storage de leur navigateur. Une page spéciale où les utilisateurs peuvent visualiser et gérer leurs films favoris doit également être disponible.
+
+## Livrables
+
+- Maquettes / wireframes.
+- Organisation
+- Dépôt GitHub avec README complet et pertinent.
+- Rendu Simplonline avec le lien des différents livrables (vérifier qu'ils soient accessibles publiquement !).
